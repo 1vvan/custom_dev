@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cards</title>
+
+    <link rel="icon" href="../images/logo_no_title.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/design.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/modals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="/index.html" class="header__logo">
+                    <img src="../images/custom_cards_horizontal_logo.svg" alt="">
+                </a>
+                <button class="header__burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="/index.html#design" class="menu__link">Дизайн</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/index.html#advantages" class="menu__link">Переваги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/index.html#our-works" class="menu__link">Галерея</a>
+                        </li>
+                        <li class="menu__item active">
+                            <a href="/pages/business.html" class="menu__link">Для бізнесу</a>
+                        </li>
+                        <!-- <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li> -->
+                        <li class="menu__item">
+                            <a href="/index.html#map_block" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__social">
+                    <a href="#">
+                        <img src="../images/instagram_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/call_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/viber_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/whatsapp__icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/telegram_icon.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__social burger">
+                    <a href="#">
+                        <img src="../images/instagram_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/call_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/viber_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/whatsapp__icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/telegram_icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="info" class="info"></section>
+                <div class="info__container _container">
+                    <div class="info__bread-crumbs">
+                        <a href="/index.html">Головна</a>
+                        <img src="../images/lime_dot.svg" alt="">
+                        <a class="target" href="/pages/business.html">Стандартний дизайн</a>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <div class="card__container _container">
+                    <h1 class="card__title">Дизайн картки</h1>
+                    <div class="card__content">
+                        <div class="card__color">
+                            <h6>Оберіть колір картки</h6>
+                            <div class="color-radio" id="color-radio-container">
+                                <!-- <div class="color-radio__item">
+                                    <div class="item-preview">
+                                        <div style="background-color: #E5EEEF;"></div>
+                                    </div>
+                                    <input type="radio" id="card_color_1" name="color" value="#E5EEEF" checked />
+                                </div> -->
+                            </div>
+                            <div class="card__preview">
+                                <img src="../images/card_example.png" alt="Card Design" class="card-image__img">
+                                <div class="card-icon">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="color-overlay" id="color-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="card__logo">
+                            <h6>Категорії дизайну</h6>
+                            <div class="card_logo_category_container">
+                                <button class="prev-category-arrow"><img src="../images/arrow_icon_prev.svg" alt=""></button>
+                                <div id="card_logo_category_slider"></div>
+                                <button class="next-category-arrow"><img src="../images/arrow_icon_next.svg" alt=""></button>
+                            </div>
+                            <div class="card__logo_select-container">
+                                <div id="card_logo_slider"></div>
+                                <div class="card__logo_select_controls">
+                                    <img src="../images/arrow_icon_prev.svg" class="prev-arrow-logo" alt="">
+                                    <img src="../images/arrow_icon_next.svg" class="next-arrow-logo" alt="">
+                                </div>
+                            </div>
+                            <button class="lime-button" id="order_btn">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer class="footer">
+            <div class="footer__container _container">
+                <div class="footer__menu">
+                    <div class="footer__side">
+                        <img class="footer__side_logo" src="../images/footer-logo.svg" alt="">
+                        <div class="footer__side_social">
+                            <a href="#">
+                                <img src="../images/instagram_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/facebook_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/call_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/viber_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/whatsapp__icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/telegram_icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="footer__links">
+                        <ul class="footer__menu_list">
+                            <li class="footer__menu_item">
+                                <a href="/index.html#design" class="footer__menu_link">Дизайн</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="/index.html#our-works" class="footer__menu_link">Галерея</a>
+                            </li>
+                            <!-- <li class="footer__menu_item">
+                                <a href="#" class="footer__menu_link">FAQ</a>
+                            </li> -->
+                            <li class="footer__menu_item">
+                                <a href="/index.html#advantages" class="footer__menu_link">Переваги</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="/pages/business.html" class="footer__menu_link">Для бізнесу</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="/index.html#map_block" class="footer__menu_link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__info">
+                    <p><span>©</span> 2024 CustomCards</p>
+                    <a href="/pages/policy.html">Політика конфіденційності</a>
+                    <a href="/pages/offer.html">Публічна оферта</a>
+                </div>
+            </div>
+        </footer>
+
+        <div id="form_default_modal" class="modal form_modal" style="display: none;">
+            <div class="modal-content card_order">
+                <span id="modal-close-standart-design" class="modal-close">&times;</span>
+                <h6 class="modal-title">Замовлення</h6>
+                <div class="form_container">
+                    <form id="form_default_card" class="form_order_card">
+                        <h6>Особисті дані</h6>
+                        <div class="form_item">
+                            <label for="name">Ім'я</label>
+                            <input type="text" name="name" id="name_input" placeholder="Ваше ім'я">
+                        </div>
+                        <div class="form_item">
+                            <label for="phone">Номер телефону</label>
+                            <input type="tel" name="phone" id="phone_input" placeholder="+38 XXX XXX XX XX">
+                        </div>
+                        <div class="form_item">
+                            <label for="comment">Коментар до замовлення</label>
+                            <input type="text" name="comment" id="comment_input" placeholder="Коментар">
+                        </div>
+                        <h6>Спосіб доставки</h6>
+                        <div class="form_item">
+                            <label for="post_city">Місто</label>
+                            <select name="post_city" id="post_city"></select>
+                        </div>
+                        <div class="form_item">
+                            <label for="post_office">Відділеня Нової Пошти</label>
+                            <select name="post_office" id="post_office"></select>
+                        </div>
+                    </form>
+                    <div class="line"></div>
+                    <div class="payment_types">
+                        <h6>Спосіб оплати</h6>
+                        <div class="payment_type">
+                            <input type="radio" id="payment_type_1" name="payment_type" value="1" checked />
+                            <label for="payment_type_1">
+                                <span class="custom-radio"></span>
+                                Наложений платіж
+                            </label>
+                        </div>
+                        <div class="payment_type">
+                            <input type="radio" id="payment_type_2" name="payment_type" value="2" />
+                            <label for="payment_type_2">
+                                <span class="custom-radio"></span>
+                                Карткою на сайті
+                            </label>
+                        </div>
+                        <div class="cost_box">
+                            <h6>Вартість:</h6>
+                            <p class="cost_val">Гравірування:: <span id="cost_val_price">0 грн</span></p>
+                            <p class="cost_val">Металева картка: <span id="cost_val_price">2 799 грн</span></p>
+                            <h6 class="cost_val total">Всьго: <span id="cost_val_total">2 799 грн</span></h6>
+                            <div class="form_item">
+                                <input type="text" id="promo_code_input" placeholder="Промокод">
+                            </div>
+                            <button class="lime-button" id="sumbit_buy_default_card" type="submit">Підтвердити</button>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+
+        <div id="success_modal" class="modal" style="display: none;">
+            <div class="modal-content success">
+                <span id="modal-close-success" class="modal-close">&times;</span>
+                <h6 class="modal-title">Замовлення</h6>
+                <div class="order_details">
+                    <h6>Замовлення №: <span id="order_number"></span></h6>
+                    <p class="thanks">Дякуємо за ваше замовлення</p>
+                    <p>Наш менеджер зв'яжеться з вами найближчим часом для підтвердження та уточненя деталей</p>
+                    <button class="lime-button" id="confirm_btn">Підтвердити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.wayforpay.com/js/wayforpay.js"></script>
+    <script id="widget-wfp-script" language="javascript" type="text/javascript" src="https://secure.wayforpay.com/server/pay-widget.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="../assets/scripts/header.js"></script>
+    <script type="module" src="../assets/scripts/order-form-modal.js"></script>
+    <script type="module" src="../assets/scripts/design.js"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-37J904CSNM"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-37J904CSNM');
+        </script>
+</body>
+</html>

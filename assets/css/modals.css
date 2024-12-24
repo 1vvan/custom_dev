@@ -1,0 +1,515 @@
+@import url('./variables.css');
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image Modal */
+
+.modal-content-image {
+    display: block;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-close.image {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Default Modal */
+.modal-content {
+    display: block;
+    background: var(--gray-scale-700);
+    width: 100%;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 14px;
+    color: var(--white);
+    font-family: var(--main-font);
+    border: 1px solid var(--gray-scale-500);
+    position: relative;
+    overflow-y: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 22px;
+    right: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--gray-scale-100);
+    font-family: var(--main-font);
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #ccc;
+}
+
+.modal-title {
+    padding-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.line {
+    min-width: 1px;
+    background: linear-gradient(#262729 48%, #B7B8B9 100%);
+}
+
+@media (max-width: 992px){
+    .line {
+        width: 100%;
+        height: 1px;
+        background: var(--gray-scale-500);
+    }
+
+    .modal-close {
+        font-size: 45px;
+    }
+
+    .modal-title {
+        text-align: left;
+        line-height: 1.2;
+        max-width: 280px;
+    }
+}
+
+
+
+/* Select card type modal */
+.modal-content.select_card {
+    max-width: 708px;
+}
+
+.select-card__container {
+    display: flex;
+    gap: 20px;
+}
+
+.select-card__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 8px;
+}
+
+.select-card__item img {
+    max-width: 138px;
+}
+
+.select-card__item p {
+    display: inline-block;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--main-font);
+    font-size: 18px;
+}
+
+.select-card__item a {
+    width: 100%;
+}
+
+@media (max-width: 992px){
+    .select-card__container {
+        flex-direction: column;
+    }
+
+    .select-card__item img {
+        max-width: 90px;
+    }
+
+    .select-card__item p {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+
+/* Form Standart Card Modal */
+.form_modal .modal-content .modal-close {
+    top: 8px;
+}
+
+.modal-content.card_order {
+    max-width: 860px;
+}
+
+.form_container {
+    display: flex;
+    gap: 20px;
+}
+
+.form_order_card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 18px;
+    width: 50%;
+}
+
+.form_order_card h6 {
+    color: var(--white);
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 16px 0px 16px;
+}
+
+.form_item {
+    padding-left: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form_item label {
+    font-family: 'Roboto Mono';
+    color: var(--gray-scale-100);
+    font-size: 14px;
+}
+
+.form_item select {
+    font-family: 'Roboto';
+    color: var(--gray-scale-100);
+    font-size: 14px;
+    font-weight: 400;
+
+    padding: 14px 16px;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--gray-scale-100);
+}
+
+.form_item input {
+    font-family: 'Roboto';
+    color: var(--gray-scale-100);
+    font-size: 14px;
+    font-weight: 400;
+
+    padding: 14px 16px;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--gray-scale-100);
+}
+
+.form_item input::placeholder {
+    font-family: 'Roboto';
+    color: var(--gray-scale-400);
+    font-size: 18px;
+}
+
+.payment_types {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 0px 0px 16px;
+}
+
+.payment_types h6 {
+    color: var(--white);
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 16px 12px 0px;
+}
+
+.payment_type input[type="radio"] {
+    display: none;
+}
+
+.custom-radio {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #B7B8B9;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.custom-radio::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+}
+
+.payment_type input[type="radio"]:checked + label .custom-radio::after {
+    background-color: var(--lime-500);
+}
+
+.payment_type label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cost_box {
+    margin-top: 8px;
+    background-color: var(--gray-scale-600);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 6px;
+}
+
+.cost_box h6 {
+    padding: 0px;
+    color: var(--lime-500);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.cost_box .cost_val {
+    font-size: 18px;
+    color: var(--gray-scale-100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cost_box .cost_val span {
+    color: var(--white);
+}
+
+.cost_box h6:first-child {
+    margin-bottom: 12px;
+}
+
+.cost_box .cost_val.total {
+    margin-top: 16px;
+    color: var(--lime-500);
+}
+
+.cost_box .cost_val.total span {
+    color: var(--lime-500);
+}
+
+.cost_box .form_item {
+    margin-top: 16px;
+    padding-left: 0;
+}
+
+.cost_box .form_item input {
+    width: 100%;
+}
+
+.cost_box button {
+    width: 100%;
+    margin-top: 24px;
+}
+
+@media (max-width: 992px){
+    .modal-content.card_order {
+        /* margin-top: 37%; */
+        overflow-y: auto;
+        padding: 16px;
+        width: 100%;
+    }
+
+    .form_container {
+        flex-direction: column;
+    }
+
+    .form_container .line {
+        display: none;
+    }
+
+    .form_modal {
+        align-items: start;
+    }
+
+    .form_order_card {
+        width: 100%;
+    }
+
+    .payment_types {
+        width: 100%;
+    }
+}
+
+
+
+/* Modal Success Purchase */
+.modal-content.success {
+    max-width: 407px;
+}
+
+@media (max-width: 992px){
+    .modal-content.success {
+        width: 90%;
+    }
+}
+
+.order_details {
+    font-family: var(--main-font);
+}
+
+.order_details h6 {
+    color: var(--lime-500);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.order_details p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.order_details p.thanks {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.order_details button {
+    width: 100%;
+}
+
+
+/* Individual Form Modal */
+.design_example p {
+    color: var(--gray-scale-100);
+    font-family: 'Roboto';
+}
+
+.individual-file-upload {
+    display: inline-block;
+    padding: 10px;
+    width: 343px;
+    height: 120px;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px dashed var(--gray-scale-400);
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.individual-file-upload input[type="file"] {
+    display: none;
+}
+
+.individual-file-upload .file-upload-text {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+}
+
+.individual-file-upload:hover {
+    opacity: 0.7;
+}
+
+.urgently-checkbox {
+    margin-top: 16px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.urgently-checkbox input {
+    display: none;
+}
+
+.urgently-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+.urgently-checkbox input:checked ~ .checkmark {
+    background-color: var(--lime-500);
+    border-color: var(--lime-500);
+}
+
+.urgently-checkbox input:checked ~ .checkmark::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    background-image: url('../../images/icon-check.svg');
+    transform: translate(-50%, -50%);
+}
+
+.urgently-checkbox:hover input ~ .checkmark {
+    opacity: 0.7;
+}
+
+@media (max-width: 992px){
+    .individual-file-upload {
+        width: 100%;
+    }
+}
+
+
+/* COntact Modal */
+
+#modal_contact .modal-content {
+    max-width: 600px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form .form_item {
+    padding-left: 0;
+}
+
+#sumbit_contact_form {
+    width: 100%;
+}

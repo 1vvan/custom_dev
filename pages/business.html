@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cards</title>
+
+    <link rel="icon" href="../images/logo_no_title.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/business.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/modals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="/index.html" class="header__logo">
+                    <img src="../images/custom_cards_horizontal_logo.svg" alt="">
+                </a>
+                <button class="header__burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="/index.html#design" class="menu__link">Дизайн</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/index.html#advantages" class="menu__link">Переваги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/index.html#our-works" class="menu__link">Галерея</a>
+                        </li>
+                        <li class="menu__item active">
+                            <a href="/pages/business.html" class="menu__link">Для бізнесу</a>
+                        </li>
+                        <!-- <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li> -->
+                        <li class="menu__item">
+                            <a href="/index.html#map_block" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__social">
+                    <a href="#">
+                        <img src="../images/instagram_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/call_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/viber_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/whatsapp__icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/telegram_icon.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__social burger">
+                    <a href="#">
+                        <img src="../images/instagram_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/call_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/viber_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/whatsapp__icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/telegram_icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="info" class="info">
+                <div class="info__container _container">
+                    <div class="info__bread-crumbs">
+                        <a href="/index.html">Головна</a>
+                        <img src="../images/lime_dot.svg" alt="">
+                        <a class="target" href="/pages/business.html">Для бізнесу</a>
+                    </div>
+                    <h1 class="info__title">Корпоративним клієнтам</h1>
+                    <p class="info__subtitle">Приймаємо замовлення на виготовлення металевих банківських карток для компаній на спеціальних умовах</p>
+                    <div class="info__cards-grid">
+                        <div class="info__cards-grid_item">
+                            <span>Вигідно</span>
+                            <p>Оптові ціни на металеві банківські картки</p>
+                        </div>
+                        <div class="info__cards-grid_item">
+                            <span>Швидко</span>
+                            <p>Прискорене виготовлення великої кількості карт</p>
+                        </div>
+                        <div class="info__cards-grid_item">
+                            <span>Зручно</span>
+                            <p>Йдемо назустріч у способах та термінах оплати</p>
+                        </div>
+                        <div class="info__cards-grid_item">
+                            <span>Естетично</span>
+                            <p>Персональні дизайни під запити замовника</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partnership">
+                <div class="partnership__container _container">
+                    <h6 class="partnership__title">Партнерство з <span>CustomCards</span> – це ексклюзивні металеві картки на взаємовигідних умовах.</h6>
+                    <div class="partnership__cards">
+                        <div class="partnership__cards-item">
+                            <img src="../images/partnership_1.png" alt="">
+                        </div>
+                        <div class="partnership__cards-item">
+                            <img src="../images/partnership_2.png" alt="">
+                        </div>
+                        <div class="partnership__cards-item">
+                            <img src="../images/partnership_3.png" alt="">
+                        </div>
+                        <div class="partnership__cards-item">
+                            <img src="../images/partnership_4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="interest">
+                <div class="interest__container _container">
+                    <h6 class="interest__title">Кому це може бути цікаво?</h6>
+                    <div class="interest_cards">
+                        <div class="interest_cards-item">
+                            <img src="../images/interest_1.png" alt="">
+                            <span>Банкам</span>
+                        </div>
+                        <div class="interest_cards-item">
+                            <img src="../images/interest_2.png" alt="">
+                            <span>Компаніям у сфері розваг та спорту</span>
+                        </div>
+                        <div class="interest_cards-item">
+                            <img src="../images/interest_3.png" alt="">
+                            <span>Асоціаціям</span>
+                        </div>
+                        <div class="interest_cards-item">
+                            <img src="../images/interest_4.png" alt="">
+                            <span>Компаніям для своїх співробітників</span>
+                        </div>
+                        <div class="interest_cards-item">
+                            <img src="../images/interest_5.png" alt="">
+                            <span>Ексклюзивним клубним організаціям </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="calc">
+                <div class="calc__container _container">
+                    <div class="calc__price">
+                        <h5>Розрахуйте вартість корпоративного замовлення</h5>
+                        <div class="calc__price-content">
+                            <form id="calc_price_form">
+                                <div class="form_item">
+                                    <label for="calc_price_service">Корпоративна послуга</label>
+                                    <select name="calc_price_service" id="calc_price_service">
+                                        <option value="0" selected>Оберіть послугу</option>
+                                        <option value="1000">Картки з NFC</option>
+                                        <option value="2000">Картки без NFC</option>
+                                    </select>
+                                </div>
+                                <div class="form_item">
+                                    <label for="calc_price_count">Кількість</label>
+                                    <input type="number" name="calc_price_count" id="calc_price_count" min="10" placeholder="Оберіть кількість одиниць">
+                                </div>
+                                <button class="lime-button" id="calc_submit_btn" type="submit">Розрахувати</button>
+                            </form>
+                            <div class="calc_price_res">
+                                <h6>Вартість замовлення:</h6>
+                                <p class="calc_price_res-val">Послуга: <span id="calc_res_service_price">0 грн</span></p>
+                                <p class="calc_price_res-val">Корпоративна знижка: <span id="calc_res_discount_price">0 грн</span></p>
+                                <h6 class="calc_price_res-val">Всьго: <span id="calc_res_total_price">0 грн</span></h6>
+                            </div>
+                            <button class="lime-button" id="calc_submit_btn_mobile" type="submit">Розрахувати</button>
+                        </div>
+                    </div>
+                    <div class="calc__request">
+                        <h6>Залишіть заявку на корпоративне замовлення, щоб обговорити з нами всі деталі</h6>
+                        <button class="lime-button" id="contact_btn">Оформити корпоративне замовлення</button>
+                    </div>
+                </div>
+            </section>            
+        </main>
+        <footer class="footer">
+            <div class="footer__container _container">
+                <div class="footer__menu">
+                    <div class="footer__side">
+                        <img class="footer__side_logo" src="../images/footer-logo.svg" alt="">
+                        <div class="footer__side_social">
+                            <a href="#">
+                                <img src="../images/instagram_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/facebook_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/call_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/viber_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/whatsapp__icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../images/telegram_icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="footer__links">
+                        <ul class="footer__menu_list">
+                            <li class="footer__menu_item">
+                                <a href="/index.html#design" class="footer__menu_link">Дизайн</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="/index.html#our-works" class="footer__menu_link">Галерея</a>
+                            </li>
+                            <!-- <li class="footer__menu_item">
+                                <a href="#" class="footer__menu_link">FAQ</a>
+                            </li> -->
+                            <li class="footer__menu_item">
+                                <a href="/index.html#advantages" class="footer__menu_link">Переваги</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="/pages/business.html" class="footer__menu_link">Для бізнесу</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="/index.html#map_block" class="footer__menu_link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__info">
+                    <p><span>©</span> 2024 CustomCards</p>
+                    <a href="/pages/policy.html">Політика конфіденційності</a>
+                    <a href="/pages/offer.html">Публічна оферта</a>
+                </div>
+            </div>
+        </footer>
+
+        <div id="modal_contact" class="modal" style="display: none;">
+            <div class="modal-content" src="" alt="">
+                <span id="modal_contact_close" class="modal-close">&times;</span>
+                <h6 class="modal-title">Корпоративне замовлення</h6>
+                <form class="contact-form" id="contact_form">
+                    <div class="form_item">
+                        <label for="name">Ім'я</label>
+                        <input type="text" name="name" id="name_input" placeholder="Ваше ім'я">
+                    </div>
+                    <div class="form_item">
+                        <label for="phone">Номер телефону</label>
+                        <input type="tel" name="phone" id="phone_input" placeholder="+38 XXX XXX XX XX">
+                    </div>
+                    <button class="lime-button" id="sumbit_contact_form" type="submit">Підтвердити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.wayforpay.com/js/wayforpay.js"></script>
+    <script id="widget-wfp-script" language="javascript" type="text/javascript" src="https://secure.wayforpay.com/server/pay-widget.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="../assets/scripts/header.js"></script>
+    <script src="../assets/scripts/business.js"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-37J904CSNM"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-37J904CSNM');
+        </script>
+</body>
+</html>

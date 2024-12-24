@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cards</title>
+
+    <link rel="icon" href="./images/logo_no_title.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/modals.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="/index.html" class="header__logo">
+                    <img src="./images/custom_cards_horizontal_logo.svg" alt="">
+                </a>
+                <button class="header__burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#design" class="menu__link">Дизайн</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#advantages" class="menu__link">Переваги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#our-works" class="menu__link">Галерея</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/pages/business.html" class="menu__link">Для бізнесу</a>
+                        </li>
+                        <!-- <li class="menu__item">
+                            <a href="#map_block" class="menu__link">FAQ</a>
+                        </li> -->
+                        <li class="menu__item">
+                            <a href="#map_block" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__social">
+                    <a href="#">
+                        <img src="./images/instagram_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/call_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/viber_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/whatsapp__icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/telegram_icon.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__social burger">
+                    <a href="#">
+                        <img src="./images/instagram_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/call_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/viber_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/whatsapp__icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/telegram_icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="hero__container _container">
+                    <div class="hero__title">
+                        <p>Залізний <span>апгрейд</span></p>
+                        <p>вашої картки</p>
+                    </div>
+                    <div class="hero__subtitle">
+                        <p><span>Преміальне перетворення:</span> із звичайної пластикової банківської картки — до дизайнерської картки з металу</p>
+                    </div>
+                    <a href="#design" class="hero__button">
+                        Створити дизайн
+                    </a>
+                </div>
+            </section>
+            <section class="design" id="design">
+                <div class="design__container _container">
+                    <div class="design__list">
+                        <div class="design__item">
+                            <div class="design__item_card">
+                                <h6 class="standart">Картка без NFC</h6>
+                                <img src="./images/design-card.png" alt="">
+                                <p>Створіть у конструкторі власний дизайн картки за 3 кроки. Великий вибір розкішних текстур металу, десятки стильних оформлень та шрифтів</p>
+                                <div class="button-wrapper"><button class="lime-button select_card_btn" data-price="1999" data-type="no_nfc">Замовити від 1 999 ₴</button></div>
+                            </div>
+                            <button class="over lime-button select_card_btn" data-price="1999" data-type="no_nfc">Замовити від 1 999 ₴</button>
+                        </div>
+                        <div class="design__item">
+                            <div class="design__item_card">
+                                <h6>Картка з NFC</h6>
+                                <img src="./images/design-card.png" alt="">
+                                <p>Персональна розробка картки під ваші запити. Ексклюзивні дизайнерські рішення лише для вас</p>
+                                <div class="button-wrapper"><button class="lime-button select_card_btn" data-price="2799" data-type="nfc">Замовити від 3 000 ₴</button></div>
+                            </div>
+                            <button class="over lime-button select_card_btn" data-price="2799" data-type="nfc">Замовити від 2 799 ₴</button>
+                        </div>
+                    </div>
+          <!--          <div class="design__video">
+                        <video id="design_video" src="../images/design_video.mp4"></video>
+                        <div class="play-button"></div>
+                        <div class="pause-button"></div>
+                    </div>-->
+                </div>
+            </section>
+            <section class="advantages" id="advantages">
+                <div class="advantages__container _container">
+                    <div class="advantages__title">
+                        <span>6</span>
+                        <p>причин обрати нас</p>
+                    </div>
+                    <div class="advantages__list">
+                        <div class="advantages__list_side">
+                            <div class="advantages__list_item">
+                                <span>Надійно</span>
+                                <p>Міцний метал: жодних розшарувань і вицвітання банківської картки</p>
+                            </div>
+                            <div class="advantages__list_item">
+                                <span>Унікально</span>
+                                <p>Змінюємо стандартні банківські картки на картки з вашим дизайном</p>
+                            </div>
+                            <div class="advantages__list_item">
+                                <span>Конфіденційно</span>
+                                <p>Гарантуємо захист та конфіденційність даних банківської картки</p>
+                            </div>
+                        </div>
+                        <div class="advantages__list_card">
+                            <img src="./images/advantages_card.png" alt="">
+                        </div>
+                        <div class="advantages__list_side">
+                            <div class="advantages__list_item">
+                                <span>Безпечно</span>
+                                <p>Змінюємо дизайн, не порушуючи початкову функціональність</p>
+                            </div>
+                            <div class="advantages__list_item">
+                                <span>Швидко</span>
+                                <p>Створюємо вибраний дизайн за 10-15 хвилин за допомогою лазерного верстата</p>
+                            </div>
+                            <div class="advantages__list_item">
+                                <span>Преміально</span>
+                                <p>Витонченість, міцність, унікальний дизайн. Кожна оплата карткою – доза задоволення</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="nfc">
+                <div class="nfc__container _container">
+                    <div class="nfc__title">Безконтактна картка NFC</div>
+                    <div class="nfc__subtitle">Платіть одним дотиком до терміналу в магазинах, транспорті, кафе. Створіть власний дизайн металевої картки з безконтактною оплатою.</div>
+                    <div class="nfc__actions">
+                        <button class="lime-button select_card_btn" data-type="nfc" id="order_button">Стандартний дизайн</button>
+                        <button class="lime-button transparent" data-price="2799" id="order_button_individual">Індивідуальний дизайн</button>
+                    </div>
+                </div>
+            </section>
+            <section class="our-works" id="our-works">
+                <div class="our-works__container _container">
+                    <div class="our-works__title">Наші роботи</div>
+                    <div class="our-works__social">
+                        <a href="#">
+                            <img src="./images/instagram_icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/facebook_icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/call_icon.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="our-works__slider">
+                        <div class="our-works__slide">
+                            <div class="our-works__small-images">
+                                <div class="small-image"><img src="./images/gal/min1.jpg" alt=""></div>
+                                <div class="small-image"><img src="./images/gal/min2.jpg" alt=""></div>
+                                <div class="small-image"><img src="./images/gal/min3.jpg" alt=""></div>
+                                <div class="small-image"><img src="./images/gal/min4.jpg" alt=""></div>
+                            </div>
+                            <div class="our-works__big-image">
+                                <img src="./images/gal/slide_big1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="our-works__slide">
+                            <div class="our-works__small-images">
+                                <div class="small-image"><img src="./images/gal/1.jpg" alt=""></div>
+                                <div class="small-image"><img src="./images/gal/1.jpg" alt=""></div>
+                                <div class="small-image"><img src="./images/gal/1.jpg" alt=""></div>
+                                <div class="small-image"><img src="./images/gal/1.jpg" alt=""></div>
+                            </div>
+                            <div class="our-works__big-image">
+                                <img src="./images/slide_big.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-works__bottom">
+                        <a href="#" class="our-works__bottom_link">Подивитись все</a>
+                        <a href="#" class="our-works__bottom_btn lime-button select_card_btn" data-type="no_nfc" data-price="2799">Замовити</a>
+                        <div class="our-works__bottom_controls">
+                            <img src="./images/arrow_icon_prev.svg" class="prev-arrow" alt="">
+                            <img src="./images/arrow_icon_next.svg" class="next-arrow" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="our-works__bottom_btn over lime-button select_card_btn" data-type="no_nfc" data-price="2799">Замовити</a>
+                </div>
+            </section>
+            <section class="map" id="map_block">
+                <div class="map__container _container">
+                    <div class="map__title">Змінюємо картки тут</div>
+                    <div class="map__content">
+                        <div class="map__content_side">
+                            <h6>Адреса</h6>
+                            <div class="map__content_side-info">
+                                <p>Україна,</p>
+                                <p>м. Київ, вул. Чикаленка 9Б, </p>
+                                <a href="tel:+380937000233">+38 093 7000 233</a>
+                            </div>
+                        </div>
+                        <div id="map" style="width:577px; height:577px;"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="order">
+                <div class="order__container _container">
+                    <h6 class="order__title">Бажаєте виділятися?</h6>
+                    <p class="order__subtitle">Створіть свій дизайн картки, а ми його швидко реалізуємо, зберігаючи усі стандарти банківської картки</p>
+                    <a href="#" class="order__button lime-button select_card_btn" data-type="no_nfc" data-price="2799">Замовити</a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container _container">
+                <div class="footer__menu">
+                    <div class="footer__side">
+                        <img class="footer__side_logo" src="./images/footer-logo.svg" alt="">
+                        <div class="footer__side_social">
+                            <a href="#">
+                                <img src="./images/instagram_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/facebook_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/call_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/viber_icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/whatsapp__icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/telegram_icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="footer__links">
+                        <ul class="footer__menu_list">
+                            <li class="footer__menu_item">
+                                <a href="#design" class="footer__menu_link">Дизайн</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="#our-works" class="footer__menu_link">Галерея</a>
+                            </li>
+                            <!-- <li class="footer__menu_item">
+                                <a href="#" class="footer__menu_link">FAQ</a>
+                            </li> -->
+                            <li class="footer__menu_item">
+                                <a href="#advantages" class="footer__menu_link">Переваги</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="/pages/business.html" class="footer__menu_link">Для бізнесу</a>
+                            </li>
+                            <li class="footer__menu_item">
+                                <a href="#map_block" class="footer__menu_link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__info">
+                    <p><span>©</span> 2024 CustomCards</p>
+                    <a href="/pages/policy.html">Політика конфіденційності</a>
+                    <a href="/pages/offer.html">Публічна оферта</a>
+                </div>
+            </div>
+        </footer>
+
+        <div id="modal" class="modal" style="display: none;">
+            <span id="modal-close" class="modal-close image">&times;</span>
+            <img id="modal-image" class="modal-content-image" src="" alt="">
+        </div>
+
+        <div id="modal_select_card" class="modal" style="display: none;">
+            <div class="modal-content select_card" src="" alt="">
+                <span id="modal_close_select_card" class="modal-close">&times;</span>
+                <h6 class="modal-title">Оберіть тип  дизайну картки</h6>
+                <div class="select-card__container">
+                    <div class="select-card__item">
+                        <img src="./images/individual_design_image.png" alt="">
+                        <p>Якщо маєш ідею власного дизайну картки, наша команда допоможе втилити у життя ваші побажання</p>
+                        <a href="./pages/design.html" id="open_individual_form" class="lime-button transparent">індивідуальний</a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="select-card__item">
+                        <img src="./images/standart_design_image.png" alt="">
+                        <p>Обирай дизайн картки з нашого каталогу зібражень. Каталог мистить більш ніж 5000 зображень з 50 категорій </p>
+                        <a href="./pages/design.html" class="lime-button standart">стандартний</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="form_individual_modal" class="modal form_modal" style="display: none;" data-price="1799">
+            <div class="modal-content card_order">
+                <span id="modal-close-standart-design" class="modal-close">&times;</span>
+                <h6 class="modal-title">Замовлення</h6>
+                <div class="form_container">
+                    <form id="form_default_card" class="form_order_card">
+                        <h6>Особисті дані</h6>
+                        <div class="form_item">
+                            <label for="name">Ім'я</label>
+                            <input type="text" name="name" id="name_input" placeholder="Ваше ім'я">
+                        </div>
+                        <div class="form_item">
+                            <label for="phone">Номер телефону</label>
+                            <input type="tel" name="phone" id="phone_input" placeholder="+38 XXX XXX XX XX">
+                        </div>
+                        <div class="form_item">
+                            <label for="comment">Коментар до замовлення</label>
+                            <input type="text" name="comment" id="comment_input" placeholder="Коментар">
+                        </div>
+                        <h6>Спосіб доставки</h6>
+                        <div class="form_item">
+                            <label for="post_city">Місто</label>
+                            <select name="post_city" id="post_city"></select>
+                        </div>
+                        <div class="form_item">
+                            <label for="post_office">Відділеня Нової Пошти</label>
+                            <select name="post_office" id="post_office"></select>
+                        </div>
+                    </form>
+                    <div class="line"></div>
+                    <div class="payment_types">
+                        <h6>Прикладіть зразок дизайну</h6>
+                        <div class="design_example">
+                            <label class="individual-file-upload">
+                                <input type="file" id="file_input" accept=".png, .jpg, .jpeg, .pdf, .svg, .ai"/>
+                                <span class="file-upload-text"><img src="./images/icon-clip.svg" alt=""><span id="file_text">Зображення</span></span>
+                            </label>
+                            <p>Час розробки дизайну 1-2 робочі дні. Якщо ви хочете отримати замовлення якнайшвидше, поставте галочку в поле "Терміново". Вартість + 1000 грн</p>
+                            <label class="urgently-checkbox">
+                                <input type="checkbox" id="urgent_checkbox" />
+                                <span class="checkmark"></span> Терміново
+                            </label>
+                        </div>
+                        
+                        <h6>Спосіб оплати</h6>
+                        <div class="payment_type">
+                            <input type="radio" id="payment_type_1" name="payment_type" value="1" checked />
+                            <label for="payment_type_1">
+                                <span class="custom-radio"></span>
+                                Наложений платіж
+                            </label>
+                        </div>
+                        <div class="payment_type">
+                            <input type="radio" id="payment_type_2" name="payment_type" value="2" />
+                            <label for="payment_type_2">
+                                <span class="custom-radio"></span>
+                                Карткою на сайті
+                            </label>
+                        </div>
+                        <div class="cost_box" id="cost_box">
+                            <h6>Вартість:</h6>
+                            <p class="cost_val">Гравірування:: <span id="cost_val">0 грн</span></p>
+                            <p class="cost_val">Металева картка: <span id="cost_val_price">2 799 грн</span></p>
+                            <h6 class="cost_val total">Всьго: <span id="cost_val_total">2 799 грн</span></h6>
+                            <div class="form_item">
+                                <input type="text" id="promo_code_input" placeholder="Промокод">
+                            </div>
+                            <button class="lime-button" id="sumbit_buy_default_card" type="submit">Підтвердити</button>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+
+        <div id="success_modal" class="modal" style="display: none;">
+            <div class="modal-content success">
+                <span id="modal-close-success" class="modal-close">&times;</span>
+                <h6 class="modal-title">Замовлення</h6>
+                <div class="order_details">
+                    <h6>Замовлення №: <span id="order_number"></span></h6>
+                    <p class="thanks">Дякуємо за ваше замовлення</p>
+                    <p>Наш менеджер зв'яжеться з вами найближчим часом для підтвердження та уточненя деталей</p>
+                    <button class="lime-button" id="confirm_btn">Підтвердити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="./assets/scripts/gallary-slider.js"></script>
+    <script src="https://www.wayforpay.com/js/wayforpay.js"></script>
+    <script id="widget-wfp-script" language="javascript" type="text/javascript" src="https://secure.wayforpay.com/server/pay-widget.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="../assets/scripts/map.js"></script>
+    <script src="../assets/scripts/header.js"></script>
+    <script src="../assets/scripts/select-card.js"></script>
+    <script src="../assets/scripts/script.js"></script>
+    <script type="module" src="../assets/scripts/order-form-modal.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37J904CSNM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-37J904CSNM');
+    </script>
+</body>
+</html>

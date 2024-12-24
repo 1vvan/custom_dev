@@ -1,0 +1,25 @@
+/* Variables */
+:root {
+    /* Color Pallette */
+    --white: #fff;
+
+    --gray-scale-900: #141516;
+    --gray-scale-800: #1D1E20;
+    --gray-scale-700: #262729;
+    --gray-scale-600: #2F3033;
+    --gray-scale-500: #38393D;
+    --gray-scale-400: #58595C;
+    --gray-scale-300: #78787B;
+    --gray-scale-200: #98989A;
+    --gray-scale-100: #B7B8B9;
+    --gray-scale-50: #D7D8DA;
+
+    --lime-500: #DFFC00;
+    --lime-600: #CEE900;
+    --lime-700: #C3DC00;
+    --lime-800: #ABC100;
+    --lime-900: #92A500;
+
+    /* Fonts */
+    --main-font: "Open Sans", sans-serif;
+}
